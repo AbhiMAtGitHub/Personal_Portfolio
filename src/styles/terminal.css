@@ -1,0 +1,16 @@
+/* src/styles/terminal.css */
+body {
+  margin: 0;
+  background-color: #000;
+  color: #00ff00;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.terminal-container {
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+input::placeholder {
+  color: #0f0;
+}
