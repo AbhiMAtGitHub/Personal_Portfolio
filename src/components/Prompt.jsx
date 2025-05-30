@@ -1,11 +1,12 @@
-// src/components/Prompt.jsx
 import React from "react";
 
 const Prompt = ({ command, response }) => {
   return (
     <div className="mb-2">
-      <div><span className="text-green-500">$</span> {command}</div>
-      <div className="ml-4">{response}</div>
+      <div className="text-green-500">
+        Abhishek@portfolio:~$ <span className="text-green-400">{command}</span>
+      </div>
+      <div className="text-green-300">{response}</div>
     </div>
   );
 };

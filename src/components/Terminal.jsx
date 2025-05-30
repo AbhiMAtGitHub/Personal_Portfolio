@@ -1,4 +1,3 @@
-// src/components/Terminal.jsx
 import React, { useState } from "react";
 import Prompt from "./Prompt";
 import { commands } from "../constants/commands.jsx";
@@ -10,37 +9,34 @@ const Terminal = () => {
   const handleCommand = (e) => {
     if (e.key === "Enter") {
       const trimmed = input.trim().toLowerCase();
-
-      if (trimmed === "clear") {
-        setHistory([]); // Clear terminal history
+      if (trimmed === "clear" || trimmed === "cls") {
+        setHistory([]);
       } else {
         const response = commands[trimmed] || `Command not found: ${trimmed}`;
         setHistory([...history, { command: trimmed, response }]);
       }
-
       setInput("");
     }
   };
 
   return (
-    <div className="terminal-container p-4 text-green-400 font-mono">
-      {/* <Header /> */}
-      <div className="terminal-header text-white mb-4">
-        Welcome to Abhishek's Portfolio!
+    <div className="bg-black text-green-200 p-6 rounded-lg shadow-md border border-green-400 font-mono h-[500px] overflow-y-auto">
+      <div className="text-green-800 mb-4 italic">
+        Welcome to Abhishek's Portfolio. Type 'help' to see available commands
       </div>
 
-      {history.map((item, index) => (
-        <Prompt key={index} command={item.command} response={item.response} />
+      {history.map((item, idx) => (
+        <Prompt key={idx} command={item.command} response={item.response} />
       ))}
 
-      <div className="flex">
-        <span className="text-green-500">$</span>
+      <div className="flex items-center mt-2">
+        <span className="text-green-500">Abhishek@portfolio:~$</span>
         <input
           type="text"
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={handleCommand}
-          className="bg-transparent border-none outline-none text-green-400 ml-2 w-full caret-green-500"
+          className="bg-transparent border-none outline-none ml-2 w-full text-green-200 caret-green-400"
           autoFocus
         />
       </div>

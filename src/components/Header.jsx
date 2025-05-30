@@ -4,8 +4,8 @@ import "../styles/header.css";
 
 const Header = () => {
   return (
-    <div className="text-white text-xl mb-4">
-      Abhishek@portfolio:~$ <span className="blinking-cursor">|</span>
+    <div className="text-white text-l mb-4">
+      Welcome to Abhishek's Portfolio. Type 'help' to see available commands{" "}
     </div>
   );
 };
