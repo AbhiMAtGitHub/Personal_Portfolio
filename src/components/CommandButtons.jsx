@@ -1,27 +1,24 @@
-import React from "react";
-
+// src/components/CommandButtons.jsx
 const commands = [
   "awards",
-  "clear",
-  "exit",
+  "certifications",
+  "contact",
   "github",
   "help",
   "linkedin",
   "neofetch",
-  "others",
+  "experience",
   "projects",
   "resume",
   "skills",
   "whoami",
 ];
 
-const CommandButtons = () => {
+const CommandButtons = ({ executeCommand }) => {
   const handleClick = (cmd) => {
-    const input = document.querySelector("input");
-    input.value = cmd;
-    input.focus();
-    const enter = new KeyboardEvent("keydown", { key: "Enter" });
-    input.dispatchEvent(enter);
+    if (executeCommand?.current) {
+      executeCommand.current.executeCommand(cmd);
+    }
   };
 
   return (

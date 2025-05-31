@@ -1,5 +1,5 @@
 // src/constants/commands.jsx
-import React from "react";
+import experience from "./experience";
 
 export const commands = {
   help: (
@@ -26,6 +26,9 @@ export const commands = {
             <strong>whoami</strong> – Display my identity
           </li>
           <li>
+            <strong>about</strong> – Display about information
+          </li>
+          <li>
             <strong>skills</strong> – Show my technical skills
           </li>
           <li>
@@ -36,6 +39,12 @@ export const commands = {
           </li>
           <li>
             <strong>others</strong> – Show my management/soft skills
+          </li>
+          <li>
+            <strong>certifications</strong> – Show my certifications
+          </li>
+          <li>
+            <strong>contact</strong> – Get my contact details
           </li>
         </ul>
       </div>
@@ -246,7 +255,7 @@ export const commands = {
       );
     },
   },
-  fetch: {
+  neofetch: {
     description: "Display system info (neofetch style)",
     alias: ["neofetch"],
     render: () => (
@@ -292,4 +301,66 @@ LinkedIn: linkedin.com/in/abhishek-m-10476
       </div>
     ),
   },
+  contact: {
+    description: "Show contact information",
+    render: () => (
+      <div className="text-green-200 space-y-1">
+        <p>
+          <span className="text-green-400 font-semibold">📧 Email:</span>{" "}
+          abhishekm10476@gmail.com
+        </p>
+        <p>
+          <span className="text-green-400 font-semibold">📍 Location:</span>{" "}
+          Bangalore, India
+        </p>
+        <p>
+          <span className="text-green-400 font-semibold">📞 Phone:</span>{" "}
+          +91-9480985396
+        </p>
+        <p>
+          <span className="text-green-400 font-semibold">🔗 LinkedIn:</span>{" "}
+          <a
+            href="https://www.linkedin.com/in/abhishek-m-061269225/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-green-300"
+          >
+            linkedin.com/in/abhishek-m-061269225
+          </a>
+        </p>
+      </div>
+    ),
+  },
+  certifications: {
+    description: "Show my certifications",
+    render: () => (
+      <div className="text-green-300 space-y-4">
+        <div>
+          <span className="font-bold">
+            📄 AWS Certified Cloud Practitioner (CCP)
+          </span>
+          <p className="ml-4">
+            This certification validates my understanding of AWS core services,
+            global infrastructure, and pricing models. I leveraged this
+            knowledge while deploying backend services and real-time data
+            pipelines using AWS tools like EC2, S3, SQS, and Lambda. It helped
+            me build scalable solutions and optimize cost while maintaining
+            performance.
+          </p>
+        </div>
+        <div>
+          <span className="font-bold">📄 Reltio MDM Technical Consultant</span>
+          <p className="ml-4">
+            This certification reflects my hands-on expertise in configuring and
+            integrating Reltio MDM. I worked on ingesting, transforming, and
+            managing large-scale master data, designing data models, and
+            building backend APIs to interact with Reltio entities. It was
+            crucial for my role in delivering clean, connected customer data for
+            the BT client.
+          </p>
+        </div>
+      </div>
+    ),
+  },
+  experience
 };
