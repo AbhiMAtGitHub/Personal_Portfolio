@@ -2,6 +2,7 @@
 import React from "react";
 import Terminal from "./components/Terminal";
 import CommandButtons from "./components/CommandButtons";
+import './App.css'
 
 const App = () => {
   return (

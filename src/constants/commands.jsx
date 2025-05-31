@@ -1,32 +1,106 @@
-// src/constants/commands.js
+// src/constants/commands.jsx
 import React from "react";
 
 export const commands = {
   help: (
-    <div>
-      <div className="text-green-300">Available commands:</div>
-      <ul className="ml-4 list-disc">
-        <li>
-          <strong>help</strong> – Show available commands
-        </li>
-        <li>
-          <strong>about</strong> – About me
-        </li>
-        <li>
-          <strong>projects</strong> – Show project list
-        </li>
-        <li>
-          <strong>clear</strong> – Clear terminal
-        </li>
-      </ul>
+    <div className="text-green-300 space-y-4">
+      <div>
+        <span className="font-bold">💻 System Commands:</span>
+        <ul className="ml-4 list-none">
+          <li>
+            <strong>help</strong> – Show available commands
+          </li>
+          <li>
+            <strong>clear</strong> – Clear the terminal
+          </li>
+          <li>
+            <strong>neofetch</strong> – Display system info (Arch Linux style)
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <span className="font-bold">👤 Personal Information:</span>
+        <ul className="ml-4 list-none">
+          <li>
+            <strong>whoami</strong> – Display my identity
+          </li>
+          <li>
+            <strong>skills</strong> – Show my technical skills
+          </li>
+          <li>
+            <strong>projects</strong> – List my featured projects
+          </li>
+          <li>
+            <strong>awards</strong> – Display my achievements
+          </li>
+          <li>
+            <strong>others</strong> – Show my management/soft skills
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <span className="font-bold">🌐 Online Profiles:</span>
+        <ul className="ml-4 list-none">
+          <li>
+            <strong>linkedin</strong> – Open my LinkedIn profile
+          </li>
+          <li>
+            <strong>github</strong> – Open my GitHub profile
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <span className="font-bold">📄 Documents:</span>
+        <ul className="ml-4 list-none">
+          <li>
+            <strong>resume</strong> – Download my resume
+          </li>
+        </ul>
+      </div>
     </div>
   ),
+  whoami:
+    "Hi, I'm Abhishek — a passionate full-stack developer exploring backend, cloud, and GenAI 🚀",
+
   about: (
     <div>
       <p>
         👋 Hi, I'm <span className="text-green-300 font-bold">Abhishek</span>.
       </p>
-      <p>I’m a developer who loves building terminal UIs and smart systems.</p>
+      <p>
+        I'm a Software Developer with nearly two years of experience building
+        scalable backend systems and delivering end-to-end solutions. I
+        specialize in designing microservices and RESTful APIs using Node.js and
+        Express.js, working with event-driven architectures powered by Kafka,
+        and deploying applications on AWS with Docker and CI/CD pipelines. I've
+        also worked on real-time data pipelines and backend integrations,
+        including projects involving Master Data Management (MDM) platforms.{" "}
+      </p>
+      <br />
+      <p>
+        Alongside backend development, I've gained solid experience with ReactJS
+        and TypeScript, allowing me to build full-stack features and deliver
+        polished user experiences. Whether it's architecting backend systems,
+        handling cloud deployments, or crafting frontend interfaces - I take
+        pride in owning what I build and making it reliable.
+      </p>{" "}
+      <br />
+      <p>
+        Lately, I've been exploring the world of Generative AI and have enjoyed
+        building intelligent apps using frameworks like LangChain. I'm always
+        excited by opportunities where I can solve real problems, work with
+        great teams, and keep pushing myself to grow as a developer.
+        <br />
+        <br />
+        <p>
+          Let's connect and see what we can create together!
+          <br />
+          📩abhishekm10476@gmail.com
+        </p>
+      </p>
     </div>
   ),
   projects: (
@@ -56,6 +130,165 @@ export const commands = {
           - Tools: Postman, BurpSuite, Nmap, Cloudflared
         </div>
         <div className="mb-2">- OS: Arch Linux, Ubuntu, Windows</div>
+      </div>
+    ),
+  },
+  linkedin: {
+    description: "Open LinkedIn profile",
+    render: () => {
+      // Open LinkedIn in a new tab
+      if (typeof window !== "undefined") {
+        window.open(
+          "https://www.linkedin.com/in/abhishek-m-061269225",
+          "_blank"
+        );
+      }
+      return (
+        <span>
+          Opening{" "}
+          <span className="underline font-bold">
+            LinkedIn/abhishek-m-061269225
+          </span>
+          ...
+        </span>
+      );
+    },
+  },
+  resume: {
+    description: "Download my resume",
+    render: () => {
+      if (typeof window !== "undefined") {
+        const link = document.createElement("a");
+        link.href = "/resume.pdf"; // Path relative to public/
+        link.download = "Abhishek_Resume.pdf"; // Optional: Rename on download
+        link.click();
+      }
+
+      return (
+        <span>
+          Downloading{" "}
+          <span className="underline font-bold">Abhishek_Resume.pdf</span>...
+        </span>
+      );
+    },
+  },
+  others: {
+    description: "Show my management and soft skills",
+    render: () => (
+      <div className="text-green-300 space-y-4">
+        <div>
+          <span className="font-bold underline">🧠 Soft Skills:</span>
+          <ul className="ml-4 list-disc">
+            <li>
+              Rapid learner with a strong ability to adapt to new technologies
+              and environments.
+            </li>
+            <li>
+              Excellent written and verbal communication skills, ensuring smooth
+              collaboration.
+            </li>
+            <li>
+              Proactive problem solver who enjoys tackling challenges with
+              creativity and logic.
+            </li>
+            <li>
+              Highly organized and detail-oriented, maintaining clarity even
+              under pressure.
+            </li>
+            <li>
+              Effective in cross-functional collaboration and open to feedback
+              for continuous growth.
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <span className="font-bold underline">🧑‍💼 Management Skills:</span>
+          <ul className="ml-4 list-disc">
+            <li>
+              Demonstrated ownership of end-to-end project delivery in
+              fast-paced environments.
+            </li>
+            <li>
+              Experienced in Agile methodologies with regular sprint planning
+              and retrospectives.
+            </li>
+            <li>
+              Strong time management and prioritization to ensure deadlines are
+              consistently met.
+            </li>
+            <li>
+              Comfortable leading technical discussions and mentoring junior
+              team members.
+            </li>
+            <li>
+              Collaborated with cross-functional teams including QA, DevOps, and
+              Product Owners.
+            </li>
+          </ul>
+        </div>
+      </div>
+    ),
+  },
+  github: {
+    description: "Open GitHub profile",
+    render: () => {
+      // Open GitHub in a new tab
+      if (typeof window !== "undefined") {
+        window.open("https://github.com/AbhiMAtGitHub", "_blank");
+      }
+      return (
+        <span>
+          Opening{" "}
+          <span className="underline font-bold">GitHub/AbhiMAtGitHub</span>
+          ...
+        </span>
+      );
+    },
+  },
+  fetch: {
+    description: "Display system info (neofetch style)",
+    alias: ["neofetch"],
+    render: () => (
+      <pre className="text-green-300 whitespace-pre-wrap">
+        {`
+       /\\       
+      /  \\      
+     / /\\ \\     
+    / ____ \\    
+   /_/    \\_\\   
+
+User: Abhishek M
+OS: Arch Linux
+Hostname: abhishek.in
+Time: ${new Date().toLocaleTimeString()}
+Email: abhishek.personal10476@gmail.com
+GitHub: GitHub.com/AbhishekM-10476
+LinkedIn: linkedin.com/in/abhishek-m-10476
+`}
+      </pre>
+    ),
+  },
+  awards: {
+    description: "Show awards and recognitions",
+    render: () => (
+      <div className="text-green-200">
+        <p className="font-bold text-green-400 mb-1">
+          🏆 Team Excellence Award - Torry Harris Integration Solutions
+        </p>
+        <p className="italic text-sm text-green-300 mb-2">
+          Presented: November 2024
+        </p>
+        <p>
+          Awarded for taking end-to-end ownership of production support and
+          delivery for business-critical APIs and real-time data streaming
+          systems. Played a key role in ensuring smooth operations, proactive
+          issue resolution, and timely communication across teams, which
+          contributed significantly to the success of multiple high-priority
+          releases in a fast-paced production environment. This award was
+          presented by BT, the client, for my significant contributions to their
+          data transformation initiatives.
+        </p>
       </div>
     ),
   },

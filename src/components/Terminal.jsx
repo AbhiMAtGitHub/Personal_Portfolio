@@ -12,7 +12,19 @@ const Terminal = () => {
       if (trimmed === "clear" || trimmed === "cls") {
         setHistory([]);
       } else {
-        const response = commands[trimmed] || `Command not found: ${trimmed}`;
+        const cmd = commands[trimmed];
+        let response;
+
+        if (!cmd) {
+          response = `Command not found: ${trimmed}`;
+        } else if (typeof cmd === "string" || React.isValidElement(cmd)) {
+          response = cmd;
+        } else if (typeof cmd.render === "function") {
+          response = cmd.render();
+        } else {
+          response = `Command not found: ${trimmed}`;
+        }
+
         setHistory([...history, { command: trimmed, response }]);
       }
       setInput("");

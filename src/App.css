@@ -1,0 +1,21 @@
+/* Scrollbar Track */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Scrollbar Thumb */
+::-webkit-scrollbar-thumb {
+  background: #00ff9c; /* Bright neon green */
+  border-radius: 10px;
+}
+
+/* Scrollbar Thumb on Hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #00e68a;
+}
+
+/* Scrollbar Track Background */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
