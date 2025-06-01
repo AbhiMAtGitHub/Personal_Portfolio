@@ -340,7 +340,7 @@ LinkedIn: linkedin.com/in/abhishek-m-061269225
       <div className="text-green-300 space-y-4">
         <div>
           <span className="font-bold">
-            📄 AWS Certified Cloud Practitioner (CCP)
+            📄 AWS Certified Cloud Practitioner (CLF-C02)
           </span>
           <p className="ml-4">
             This certification validates my understanding of AWS core services,
