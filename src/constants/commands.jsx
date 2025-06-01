@@ -58,6 +58,9 @@ export const commands = {
           <li>
             <strong>github</strong> – Open my GitHub profile
           </li>
+          <li>
+            <strong>leetcode</strong> – Open my LeetCode profile
+          </li>
         </ul>
       </div>
 
@@ -271,9 +274,9 @@ User: Abhishek M
 OS: Arch Linux
 Hostname: abhishek.in
 Time: ${new Date().toLocaleTimeString()}
-Email: abhishek.personal10476@gmail.com
-GitHub: GitHub.com/AbhishekM-10476
-LinkedIn: linkedin.com/in/abhishek-m-10476
+Email: abhishekm10476@gmail.com
+GitHub: gitHub.com/AbhiMAtGitHub
+LinkedIn: linkedin.com/in/abhishek-m-061269225
 `}
       </pre>
     ),
@@ -362,5 +365,21 @@ LinkedIn: linkedin.com/in/abhishek-m-10476
       </div>
     ),
   },
-  experience
+  experience,
+  leetcode: {
+    description: "Open LeetCode profile",
+    render: () => {
+      // Open LeetCode in a new tab
+      if (typeof window !== "undefined") {
+        window.open("https://leetcode.com/u/Abhi_Krishna_/", "_blank");
+      }
+      return (
+        <span>
+          Opening{" "}
+          <span className="underline font-bold">LeetCode/Abhi_Krishna_</span>
+          ...
+        </span>
+      );
+    },
+  },
 };
