@@ -115,33 +115,99 @@ export const commands = {
       </p>
     </div>
   ),
-  projects: (
-    <ul className="ml-4 list-decimal">
-      <li>Terminal Portfolio 🌐</li>
-      <li>RAG Chatbot 🤖</li>
-      <li>AWS Data Pipelines ☁️</li>
-    </ul>
-  ),
+  projects: {
+    render: () => (
+      <div>
+        <div className="mb-4">
+          <span className="text-green-400 font-bold">
+            NeoQuery - An HR Management RAG Chatbot
+          </span>{" "}
+          <span className="text-green-300">
+            [Gemini, LangChain, Node.js, ChromaDB, React.js]
+          </span>
+          <ul className="list-disc ml-6 mt-1 text-green-300">
+            <li>
+              Designed a full-stack chatbot using Gemini 1.5 Pro with LangChain
+              and ChromaDB to provide real-time HR query resolution.
+            </li>
+            <li>
+              Built FastAPI-based modular backend with vector search and RAG
+              pipelines to ensure accurate, context-aware responses.
+            </li>
+            <li>
+              Developed a responsive ReactJS frontend and applied clean
+              architecture principles to enable scalable deployment.
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <span className="text-green-400 font-bold">
+            E-commerce App – Microservices Architecture
+          </span>{" "}
+          <span className="text-green-300">
+            [Node.js, React.js, MongoDB, AWS]
+          </span>
+          <ul className="list-disc ml-6 mt-1 text-green-300">
+            <li>
+              Developed an e-commerce platform using Node.js and React,
+              structured into microservices for modular scalability.
+            </li>
+            <li>
+              Integrated Kafka for asynchronous communication and implemented
+              CI/CD for automated cloud deployments on AWS.
+            </li>
+            <li>
+              Reduced API latency and enhanced frontend responsiveness by
+              optimizing RESTful endpoints and MongoDB queries.
+            </li>
+          </ul>
+        </div>
+      </div>
+    ),
+  },
   skills: {
-    description: "List my technical skills",
     render: () => (
       <div className="text-green-300">
-        <div className="mb-2">- Backend Development</div>
-        <div className="mb-2">- Python: Flask, FastAPI, discord.py</div>
-        <div className="mb-2">
-          - Java: Competitive Programming, JDA, Spring Boot (learning)
-        </div>
-        <div className="mb-2">
-          - JavaScript: Mongoose, Express, Node.js, discord.js, passport.js
-        </div>
-        <div className="mb-2">- Database: MongoDB, MySQL</div>
-        <div className="mb-2">- Version Control: Git</div>
-        <div className="mb-2">- CI/CD: Docker, GitHub CI/CD</div>
-        <div className="mb-2">- Cloud: Azure, AWS, GCP, Oracle Cloud</div>
-        <div className="mb-2">
-          - Tools: Postman, BurpSuite, Nmap, Cloudflared
-        </div>
-        <div className="mb-2">- OS: Arch Linux, Ubuntu, Windows</div>
+        <p>
+          <span className="font-bold text-green-400">
+            • Programming Languages:
+          </span>{" "}
+          JavaScript (ES6+), TypeScript, Java, Python
+        </p>
+        <p>
+          <span className="font-bold text-green-400">• Frameworks:</span>{" "}
+          Express.js, React.js, Next.js, Java Collections Framework
+        </p>
+        <p>
+          <span className="font-bold text-green-400">• Web Technologies:</span>{" "}
+          HTML5, CSS3, Tailwind CSS, AJAX
+        </p>
+        <p>
+          <span className="font-bold text-green-400">• Databases:</span>{" "}
+          PostgreSQL/MySQL, MongoDB, Redis
+        </p>
+        <p>
+          <span className="font-bold text-green-400">• Cloud and DevOps:</span>{" "}
+          AWS, Docker, Kubernetes, GitLab CI/CD, Jenkins
+        </p>
+        <p>
+          <span className="font-bold text-green-400">
+            • Tools and Practices:
+          </span>{" "}
+          Microservices, Kafka, OAuth2, JWT, RESTful APIs, Agile, Git, Linux
+        </p>
+        <p>
+          <span className="font-bold text-green-400">• Testing:</span> JUnit,
+          Jest, Supertest, Postman, TDD practices
+        </p>
+        <p>
+          <span className="font-bold text-green-400">
+            • Problem Solving Skills:
+          </span>{" "}
+          Data Structures and Algorithms: Java (LeetCode – Active profile),
+          System Design (LLD patterns, proficient in HLD concepts)
+        </p>
       </div>
     ),
   },
