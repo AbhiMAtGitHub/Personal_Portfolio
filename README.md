@@ -3,6 +3,8 @@
 A unique and interactive **command-line style portfolio website** built with **ReactJS** and **Tailwind CSS**.  
 This project simulates a terminal environment where visitors can type predefined commands to explore my experience, skills, projects, and more — giving a retro yet modern twist to personal branding.
 
+🔗 **Live Demo**: [https://abhishek-portfolio-henna.vercel.app/](https://abhishek-portfolio-henna.vercel.app/)
+
 ---
 
 ## 📑 Table of Contents
