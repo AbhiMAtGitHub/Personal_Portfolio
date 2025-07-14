@@ -75,7 +75,7 @@ export const commands = {
     </div>
   ),
   whoami:
-    "Hi, I'm Abhishek — a passionate full-stack developer exploring backend, cloud, and GenAI",
+    "Hi, I’m Abhishek, a backend developer who speaks in APIs, thinks in events, and deploys to the cloud. I care about clean architecture, real-time systems, and writing code that works well even when no one is watching. Clean code, observability, and developer empathy are my thing.",
 
   about: (
     <div>
