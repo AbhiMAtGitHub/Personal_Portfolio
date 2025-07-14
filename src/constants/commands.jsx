@@ -75,7 +75,7 @@ export const commands = {
     </div>
   ),
   whoami:
-    "Hi, I'm Abhishek — a passionate full-stack developer exploring backend, cloud, and GenAI 🚀",
+    "Hi, I'm Abhishek — a passionate full-stack developer exploring backend, cloud, and GenAI",
 
   about: (
     <div>
@@ -173,11 +173,11 @@ export const commands = {
           <span className="font-bold text-green-400">
             • Programming Languages:
           </span>{" "}
-          JavaScript (ES6+), TypeScript, Java, Python
+          JavaScript (ES6+), Core Java, Python, TypeScript(Learning)
         </p>
         <p>
           <span className="font-bold text-green-400">• Frameworks:</span>{" "}
-          Express.js, React.js, Next.js, Java Collections Framework
+          Node.js/Express.js, React.js, Angular(Learning)
         </p>
         <p>
           <span className="font-bold text-green-400">• Web Technologies:</span>{" "}
@@ -185,7 +185,7 @@ export const commands = {
         </p>
         <p>
           <span className="font-bold text-green-400">• Databases:</span>{" "}
-          PostgreSQL/MySQL, MongoDB, Redis
+          PostgreSQL/MySQL, MongoDB, Redis, AWS RDS, DynamoDB, Redshift DWH
         </p>
         <p>
           <span className="font-bold text-green-400">• Cloud and DevOps:</span>{" "}
@@ -198,8 +198,7 @@ export const commands = {
           Microservices, Kafka, OAuth2, JWT, RESTful APIs, Agile, Git, Linux
         </p>
         <p>
-          <span className="font-bold text-green-400">• Testing:</span> JUnit,
-          Jest, Supertest, Postman, TDD practices
+          <span className="font-bold text-green-400">• Testing:</span> Jest, Mocha, Postman, TDD practices
         </p>
         <p>
           <span className="font-bold text-green-400">
