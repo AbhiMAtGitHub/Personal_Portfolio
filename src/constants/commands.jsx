@@ -5,7 +5,7 @@ export const commands = {
   help: (
     <div className="text-green-300 space-y-4">
       <div>
-        <span className="font-bold">💻 System Commands:</span>
+        <span className="font-bold">System Commands:</span>
         <ul className="ml-4 list-none">
           <li>
             <strong>help</strong> – Show available commands
@@ -20,7 +20,7 @@ export const commands = {
       </div>
 
       <div>
-        <span className="font-bold">👤 Personal Information:</span>
+        <span className="font-bold">Personal Information:</span>
         <ul className="ml-4 list-none">
           <li>
             <strong>whoami</strong> – Display my identity
@@ -50,7 +50,7 @@ export const commands = {
       </div>
 
       <div>
-        <span className="font-bold">🌐 Online Profiles:</span>
+        <span className="font-bold">Online Profiles:</span>
         <ul className="ml-4 list-none">
           <li>
             <strong>linkedin</strong> – Open my LinkedIn profile
@@ -65,7 +65,7 @@ export const commands = {
       </div>
 
       <div>
-        <span className="font-bold">📄 Documents:</span>
+        <span className="font-bold">Documents:</span>
         <ul className="ml-4 list-none">
           <li>
             <strong>resume</strong> – Download my resume
@@ -75,42 +75,50 @@ export const commands = {
     </div>
   ),
   whoami:
-    "Hi, I’m Abhishek, a backend developer who speaks in APIs, thinks in events, and deploys to the cloud. I care about clean architecture, real-time systems, and writing code that works well even when no one is watching. Clean code, observability, and developer empathy are my thing.",
+    "Hi, I’m Abhishek — a Generative AI engineer who builds intelligent backend systems powered by LLMs. I design scalable AI pipelines, work with agentic workflows, and integrate models with real-world enterprise data. I care about reliability, clean system design, and making AI systems actually work in production. Clean code, observability, and building things that scale — that’s my thing.",
 
   about: (
     <div>
       <p>
-        👋 Hi, I'm <span className="text-green-300 font-bold">Abhishek</span>.
+        Hi, I'm <span className="text-green-300 font-bold">Abhishek</span>.
       </p>
       <p>
-        I'm a Software Developer with nearly two years of experience building
-        scalable backend systems and delivering end-to-end solutions. I
-        specialize in designing microservices and RESTful APIs using Node.js and
-        Express.js, working with event-driven architectures powered by Kafka,
-        and deploying applications on AWS with Docker and CI/CD pipelines. I've
-        also worked on real-time data pipelines and backend integrations,
-        including projects involving Master Data Management (MDM) platforms.{" "}
+        I'm a Generative AI Engineer with close to 3 years of experience
+        building scalable backend systems and production-grade AI applications.
+        I specialize in designing GenAI-powered solutions using LLMs, including
+        Retrieval-Augmented Generation (RAG) pipelines, agentic workflows, and
+        intelligent search systems for enterprise use cases.{" "}
       </p>
       <br />
       <p>
-        Alongside backend development, I've gained solid experience with ReactJS
-        and TypeScript, allowing me to build full-stack features and deliver
-        polished user experiences. Whether it's architecting backend systems,
-        handling cloud deployments, or crafting frontend interfaces - I take
-        pride in owning what I build and making it reliable.
+        In my current role, I work on developing backend systems that integrate
+        LLMs with enterprise data to automate complex workflows and enhance
+        decision-making. I have hands-on experience building APIs and
+        microservices using Python and FastAPI, processing large-scale data
+        using PySpark, and deploying applications on AWS using serverless
+        architecture, Docker, and CI/CD pipelines.
       </p>{" "}
       <br />
       <p>
-        Lately, I've been exploring the world of Generative AI and have enjoyed
-        building intelligent apps using frameworks like LangChain. I'm always
-        excited by opportunities where I can solve real problems, work with
-        great teams, and keep pushing myself to grow as a developer.
+        I’ve also worked on intelligent document processing systems, developing
+        pipelines that handle diverse data sources (PDFs, Excel, scanned
+        documents) using tools like AWS Textract and LLM-based extraction.
+        Additionally, I’ve built chatbot solutions integrated with Microsoft
+        Teams using the Microsoft Bot Framework to enable seamless interaction
+        with internal systems.
+      </p>{" "}
+      <br />
+      <p>
+        I enjoy working at the intersection of backend engineering and AI, where
+        I can design reliable, scalable systems that solve real business
+        problems. I’m always looking to deepen my understanding of GenAI systems
+        and contribute to impactful, production-grade applications.
         <br />
         <br />
         <p>
           Let's connect and see what we can create together!
           <br />
-          📩abhishekm10476@gmail.com
+          abhishekm10476@gmail.com
         </p>
       </p>
     </div>
@@ -120,48 +128,45 @@ export const commands = {
       <div>
         <div className="mb-4">
           <span className="text-green-400 font-bold">
-            NeoQuery - An HR Management RAG Chatbot
+            Quote Assist – AI-powered Product Recommendation System
           </span>{" "}
           <span className="text-green-300">
-            [Gemini, LangChain, Node.js, ChromaDB, React.js]
+            [AWS Bedrock, LangChain, LangGraph, OpenSearch, AWS Lambda, SQS, S3,
+            DynamoDB]
           </span>
-          <ul className="list-disc ml-6 mt-1 text-green-300">
-            <li>
-              Designed a full-stack chatbot using Gemini 1.5 Pro with LangChain
-              and ChromaDB to provide real-time HR query resolution.
-            </li>
-            <li>
-              Built FastAPI-based modular backend with vector search and RAG
-              pipelines to ensure accurate, context-aware responses.
-            </li>
-            <li>
-              Developed a responsive ReactJS frontend and applied clean
-              architecture principles to enable scalable deployment.
-            </li>
-          </ul>
+          <p className="ml-6 mt-1 text-green-300">
+            Built to address the manual and time-consuming process of generating
+            product recommendations from Bills of Quantities (BOQs), this system
+            enables internal sales and quotation teams to make faster and more
+            accurate decisions. The solution leverages agentic RAG architectures
+            to extract intent from complex documents and retrieve relevant
+            products from large enterprise catalogs. It was implemented using
+            hybrid search combining keyword and vector retrieval for improved
+            semantic accuracy, and deployed as a cloud-native backend system
+            using FastAPI and AWS services to ensure scalability and reliable
+            performance in production environments.
+          </p>
         </div>
 
         <div>
           <span className="text-green-400 font-bold">
-            E-commerce App – Microservices Architecture
+            Greenwashing Detection – AI-driven Sustainability Claim Validator
           </span>{" "}
           <span className="text-green-300">
-            [Node.js, React.js, MongoDB, AWS]
+            [AWS Textract, AWS Comprehend, AWS Lambda, SQS, LangChain,
+            LangSmith]
           </span>
-          <ul className="list-disc ml-6 mt-1 text-green-300">
-            <li>
-              Developed an e-commerce platform using Node.js and React,
-              structured into microservices for modular scalability.
-            </li>
-            <li>
-              Integrated Kafka for asynchronous communication and implemented
-              CI/CD for automated cloud deployments on AWS.
-            </li>
-            <li>
-              Reduced API latency and enhanced frontend responsiveness by
-              optimizing RESTful endpoints and MongoDB queries.
-            </li>
-          </ul>
+          <p className="ml-6 mt-1 text-green-300">
+            Developed to tackle the challenge of identifying misleading or
+            unsupported sustainability claims in enterprise documents, this
+            system helps improve transparency and trust in environmental
+            reporting. The solution uses LLM-based analysis with multi-stage
+            reasoning and validation pipelines to assess the credibility of
+            claims and reduce hallucinations. It was built as a scalable backend
+            application with integrated evaluation and monitoring using
+            LangSmith, and deployed on AWS using a cloud-native architecture to
+            ensure consistent and reliable performance.
+          </p>
         </div>
       </div>
     ),
@@ -171,41 +176,39 @@ export const commands = {
       <div className="text-green-300">
         <p>
           <span className="font-bold text-green-400">
-            • Programming Languages:
+            • Programming & Backend:
           </span>{" "}
-          JavaScript (ES6+), Core Java, Python, TypeScript(Learning)
+          Python, SQL, JavaScript, FastAPI, Microservices
         </p>
         <p>
-          <span className="font-bold text-green-400">• Frameworks:</span>{" "}
-          Node.js/Express.js, React.js, Angular(Learning)
+          <span className="font-bold text-green-400">• Generative AI:</span>{" "}
+          OpenAI, Anthropic, LangChain, LangGraph, RAG, Prompt Engineering,
+          Guardrails, Ollama, Hugging Face, AWS Bedrock
         </p>
         <p>
-          <span className="font-bold text-green-400">• Web Technologies:</span>{" "}
-          HTML5, CSS3, Tailwind CSS, AJAX
+          <span className="font-bold text-green-400">• Data Engineering:</span>{" "}
+          PySpark, AWS Glue, Kinesis, MSK
+        </p>
+        <p>
+          <span className="font-bold text-green-400">
+            • Search & Retrieval:
+          </span>{" "}
+          OpenSearch, Pinecone, Weaviate, ChromaDB
+        </p>
+        <p>
+          <span className="font-bold text-green-400">
+            • Cloud & Infrastructure:
+          </span>{" "}
+          AWS (Lambda, S3, API Gateway, CloudWatch, ECS), Docker, Terraform,
+          GitHub Actions
         </p>
         <p>
           <span className="font-bold text-green-400">• Databases:</span>{" "}
-          PostgreSQL/MySQL, MongoDB, Redis, AWS RDS, DynamoDB, Redshift DWH
+          PostgreSQL, MySQL, DynamoDB, AWS RDS, Aurora
         </p>
         <p>
-          <span className="font-bold text-green-400">• Cloud and DevOps:</span>{" "}
-          AWS, Docker, Kubernetes, GitLab CI/CD, Jenkins
-        </p>
-        <p>
-          <span className="font-bold text-green-400">
-            • Tools and Practices:
-          </span>{" "}
-          Microservices, Kafka, OAuth2, JWT, RESTful APIs, Agile, Git, Linux
-        </p>
-        <p>
-          <span className="font-bold text-green-400">• Testing:</span> Jest, Mocha, Postman, TDD practices
-        </p>
-        <p>
-          <span className="font-bold text-green-400">
-            • Problem Solving Skills:
-          </span>{" "}
-          Data Structures and Algorithms: Java (LeetCode – Active profile),
-          System Design (LLD patterns, proficient in HLD concepts)
+          <span className="font-bold text-green-400">• LLM Observability:</span>{" "}
+          LangSmith (Tracing, Evaluation)
         </p>
       </div>
     ),
@@ -217,7 +220,7 @@ export const commands = {
       if (typeof window !== "undefined") {
         window.open(
           "https://www.linkedin.com/in/abhishek-m-061269225",
-          "_blank"
+          "_blank",
         );
       }
       return (
@@ -254,7 +257,7 @@ export const commands = {
     render: () => (
       <div className="text-green-300 space-y-4">
         <div>
-          <span className="font-bold underline">🧠 Soft Skills:</span>
+          <span className="font-bold underline">Soft Skills:</span>
           <ul className="ml-4 list-disc">
             <li>
               Rapid learner with a strong ability to adapt to new technologies
@@ -280,7 +283,7 @@ export const commands = {
         </div>
 
         <div>
-          <span className="font-bold underline">🧑‍💼 Management Skills:</span>
+          <span className="font-bold underline">Management Skills:</span>
           <ul className="ml-4 list-disc">
             <li>
               Demonstrated ownership of end-to-end project delivery in
@@ -351,20 +354,17 @@ LinkedIn: linkedin.com/in/abhishek-m-061269225
     render: () => (
       <div className="text-green-200">
         <p className="font-bold text-green-400 mb-1">
-          🏆 Team Excellence Award - Torry Harris Integration Solutions
+          Team Excellence Award - Torry Harris Integration Solutions
         </p>
         <p className="italic text-sm text-green-300 mb-2">
           Presented: November 2024
         </p>
         <p>
-          Awarded for taking end-to-end ownership of production support and
-          delivery for business-critical APIs and real-time data streaming
-          systems. Played a key role in ensuring smooth operations, proactive
-          issue resolution, and timely communication across teams, which
-          contributed significantly to the success of multiple high-priority
-          releases in a fast-paced production environment. This award was
-          presented by BT, the client, for my significant contributions to their
-          data transformation initiatives.
+          Awarded for owning the development of scalable, cloud-native AI
+          backend systems supporting internal sales and quotation workflows.
+          Architected and delivered production-ready GenAI solutions leveraging
+          distributed microservices and retrieval-based pipelines, ensuring
+          robustness, scalability, and operational excellence.
         </p>
       </div>
     ),
@@ -374,19 +374,19 @@ LinkedIn: linkedin.com/in/abhishek-m-061269225
     render: () => (
       <div className="text-green-200 space-y-1">
         <p>
-          <span className="text-green-400 font-semibold">📧 Email:</span>{" "}
+          <span className="text-green-400 font-semibold">Email:</span>{" "}
           abhishekm10476@gmail.com
         </p>
         <p>
-          <span className="text-green-400 font-semibold">📍 Location:</span>{" "}
+          <span className="text-green-400 font-semibold">Location:</span>{" "}
           Bangalore, India
         </p>
         <p>
-          <span className="text-green-400 font-semibold">📞 Phone:</span>{" "}
+          <span className="text-green-400 font-semibold">Phone:</span>{" "}
           +91-9480985396
         </p>
         <p>
-          <span className="text-green-400 font-semibold">🔗 LinkedIn:</span>{" "}
+          <span className="text-green-400 font-semibold">LinkedIn:</span>{" "}
           <a
             href="https://www.linkedin.com/in/abhishek-m-061269225/"
             target="_blank"
@@ -405,26 +405,20 @@ LinkedIn: linkedin.com/in/abhishek-m-061269225
       <div className="text-green-300 space-y-4">
         <div>
           <span className="font-bold">
-            📄 AWS Certified Cloud Practitioner (CLF-C02)
+            AWS Certified Solutions Architect - Associate (SAA-C0)
           </span>
           <p className="ml-4">
-            This certification validates my understanding of AWS core services,
-            global infrastructure, and pricing models. I leveraged this
-            knowledge while deploying backend services and real-time data
-            pipelines using AWS tools like EC2, S3, SQS, and Lambda. It helped
-            me build scalable solutions and optimize cost while maintaining
-            performance.
-          </p>
-        </div>
-        <div>
-          <span className="font-bold">📄 Reltio MDM Technical Consultant</span>
-          <p className="ml-4">
-            This certification reflects my hands-on expertise in configuring and
-            integrating Reltio MDM. I worked on ingesting, transforming, and
-            managing large-scale master data, designing data models, and
-            building backend APIs to interact with Reltio entities. It was
-            crucial for my role in delivering clean, connected customer data for
-            the BT client.
+            This certification validates my understanding of AWS cloud
+            architecture, including core services, distributed systems, and cost
+            optimization. I have applied these principles in architecting and
+            deploying scalable, cloud-native backend systems for AI-driven
+            applications using services such as AWS Lambda, Amazon S3, Amazon
+            SQS, Amazon ECS, Amazon DynamoDB, Amazon OpenSearch, Amazon
+            CloudWatch, and Amazon Aurora Serverless. Additionally, I have
+            leveraged AWS AI/ML services such as Amazon SageMaker, Amazon
+            Bedrock, Amazon Textract, and Amazon Comprehend to build and
+            integrate intelligent, production-grade AI solutions, ensuring high
+            availability, performance, and efficient resource utilization.
           </p>
         </div>
       </div>
