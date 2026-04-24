@@ -405,7 +405,7 @@ LinkedIn: linkedin.com/in/abhishek-m-061269225
       <div className="text-green-300 space-y-4">
         <div>
           <span className="font-bold">
-            AWS Certified Solutions Architect - Associate (SAA-C0)
+            AWS Certified Solutions Architect - Associate (SAA-C03)
           </span>
           <p className="ml-4">
             This certification validates my understanding of AWS cloud
